@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070a0d">
+    <meta name="description" content="Персональная инженерная открытка.">
+    <title>[Имя], с днем рождения!</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+  </head>
+  <body class="card-page card-page--template">
+    <header class="site-header site-shell">
+      <a class="brand" href="../../">Birthday Engineering Cards</a>
+      <a class="back-link" href="../../">← Все открытки</a>
+    </header>
+
+    <main class="site-shell">
+      <section class="birthday-hero" aria-labelledby="birthday-title">
+        <p class="hero-date">ДД · ММ · ГГГГ</p>
+        <div>
+          <p class="hero-kicker">birthday.status == "ready"</p>
+          <h1 class="birthday-title" id="birthday-title">[Имя],<br>с днем рождения!</h1>
+          <p class="birthday-subtitle">[Роль] · [Команда] · [Проект]</p>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel" aria-labelledby="greeting-heading">
+          <p class="panel-label" id="greeting-heading">01 / Поздравление</p>
+          <div class="greeting-text" id="template-greeting">
+            <p>[Имя], поздравляем с днем рождения!</p>
+            <p>[Добавьте сюда персональный текст поздравления.]</p>
+            <p>[Добавьте теплое инженерное пожелание.]</p>
+          </div>
+          <div class="button-row">
+            <button class="button" type="button" data-copy-target="#template-greeting">
+              Скопировать поздравление
+            </button>
+          </div>
+        </section>
+
+        <aside class="panel" aria-label="Birthday status">
+          <p class="panel-label">02 / System status</p>
+          <div class="terminal">
+            <pre><span class="key">developer</span>: <span class="value">[Имя]</span>
+<span class="key">mood</span>: <span class="value">legendary</span>
+<span class="key">alerts</span>: <span class="value">muted</span>
+<span class="key">deploy</span>: <span class="value">successful</span>
+<span class="key">coffee</span>: <span class="value">required</span></pre>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div class="copy-toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8721a">
+    <meta
+      name="description"
+      content="Персональная инженерная открытка ко дню рождения Pablo."
+    >
+    <title>Pablo, с днем рождения!</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body class="card-page card-page--pablo">
+    <header class="site-header site-shell pablo-header">
+      <a class="brand pablo-brand" href="../">
+        <span class="pablo-brand__fruit" aria-hidden="true"></span>
+        апельсин
+      </a>
+    </header>
+
+    <main class="site-shell">
+      <section class="birthday-hero" aria-labelledby="birthday-title">
+        <span class="orange-orbit orange-orbit--one" aria-hidden="true"></span>
+        <span class="orange-orbit orange-orbit--two" aria-hidden="true"></span>
+        <span class="orange-character" aria-hidden="true"></span>
+        <p class="hero-date">11 · 06 · 2026</p>
+        <div>
+          <p class="hero-kicker">+100% к праздничному настроению</p>
+          <h1 class="birthday-title" id="birthday-title">Pablo,<br>с днем<br>рождения!</h1>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel" aria-labelledby="greeting-heading">
+          <p class="panel-label" id="greeting-heading">01 / поздравление</p>
+          <div class="greeting-text" id="pablo-greeting">
+            <p>Pablo, поздравляем с днем рождения!</p>
+            <p>
+              Желаем, чтобы сервисы отвечали быстрее, чем ревьюеры в хорошем
+              настроении, деплои проходили без сюрпризов, алерты молчали по делу,
+              а Python-код был настолько чистым, что даже линтер ставил лайк.
+            </p>
+            <p>
+              Пусть в Апельсине все работает стабильно, backend держит нагрузку
+              уверенно, а каждый новый релиз приносит не баги, а ощущение:
+              «вот это мы красиво сделали».
+            </p>
+          </div>
+          <div class="button-row">
+            <button class="button" type="button" data-copy-target="#pablo-greeting">
+              Скопировать поздравление
+            </button>
+          </div>
+        </section>
+
+        <aside class="panel" aria-label="Backend birthday status">
+          <p class="panel-label">02 / backend status</p>
+          <div class="terminal">
+            <pre>birthday_status = {
+    <span class="key">"developer"</span>: <span class="value">"Pablo"</span>,
+    <span class="key">"role"</span>: <span class="value">"Python Backend Engineer"</span>,
+    <span class="key">"company"</span>: <span class="value">"X5 Tech"</span>,
+    <span class="key">"product"</span>: <span class="value">"Апельсин"</span>,
+    <span class="key">"mood"</span>: <span class="value">"legendary"</span>,
+    <span class="key">"alerts"</span>: <span class="value">"muted"</span>,
+    <span class="key">"deploy"</span>: <span class="value">"successful"</span>,
+    <span class="key">"coffee"</span>: <span class="value">"required"</span>,
+}
+
+print(<span class="value">"С днем рождения, Pablo!"</span>)</pre>
+          </div>
+        </aside>
+
+        <section class="panel panel--wide" aria-labelledby="algorithm-heading">
+          <p class="panel-label">03 / birthday algorithm</p>
+          <h2 id="algorithm-heading">Найти самого крутого backend-разработчика</h2>
+          <p class="algorithm-intro">
+            Дан массив инженеров. Нужно найти Pablo и вернуть поздравление.
+            Ограничение по времени: до следующего деплоя.
+          </p>
+          <pre class="algorithm-code code-block">engineers = ["frontend hero", "devops wizard", "random intern", "Pablo", "legacy enjoyer"]
+
+for engineer in engineers:
+    if engineer == "Pablo":
+        print("Pablo, ты крутой. Задача решена. С днем рождения!")
+        break</pre>
+          <button
+            class="button button--secondary"
+            type="button"
+            data-reveal="#algorithm-result"
+            data-reveal-label="Задача решена ✓"
+            aria-expanded="false"
+          >
+            Решить алгоритм
+          </button>
+
+          <div class="result" id="algorithm-result" aria-hidden="true">
+            <div>
+              <div class="result-card">
+                <p><strong>Algorithm completed successfully.</strong></p>
+                <p>Pablo найден за O(n), но уважение к нему работает за O(∞).</p>
+                <p>
+                  Pablo, ты крутой backend-разработчик, который умеет превращать
+                  сложные задачи в понятный код, держать сервисы в тонусе и
+                  спокойно смотреть на продакшен, даже когда где-то рядом
+                  начинает пахнуть hotfix'ом.
+                </p>
+                <p>
+                  С днем рождения! Пусть задачки решаются быстро, баги находятся
+                  сами, а жизнь компилируется без ошибок.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <form
+        class="secret-row secret-form"
+        data-secret-form
+        data-secret-answer="апельсин"
+        data-secret-target="#secret-result"
+      >
+        <label class="secret-form__label" for="secret-word">
+          run secret birthday check
+          <span>введите секретное слово</span>
+        </label>
+        <div class="secret-form__controls">
+          <input
+            class="secret-input"
+            id="secret-word"
+            name="secret-word"
+            type="text"
+            placeholder="секретное слово"
+            autocomplete="off"
+            spellcheck="false"
+            required
+          >
+          <button class="secret-submit" type="submit">проверить</button>
+        </div>
+        <p class="secret-message" role="status" aria-live="polite" data-secret-message>
+          подсказка: самый оранжевый продукт
+        </p>
+      </form>
+
+      <div class="result secret-log" id="secret-result" aria-hidden="true">
+        <div>
+          <div class="result-card">
+            <p>[INFO] Searching for strong backend engineers...</p>
+            <p class="log-ok">[OK] Pablo found</p>
+            <p class="log-ok">[OK] Python skill confirmed</p>
+            <p class="log-ok">[OK] Энергия Апельсина обнаружена</p>
+            <p><strong>[RESULT] Birthday respect level: MAX</strong></p>
+            <p>
+              Вердикт системы: поздравить обязательно. Причина: пишет на Python,
+              держит backend, не боится продакшена.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="copy-toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

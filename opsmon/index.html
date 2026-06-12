@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070a0d">
+    <meta name="description" content="Инженерная открытка ко дню рождения Opsmon.">
+    <title>Opsmon, с днем рождения!</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body class="card-page card-page--opsmon">
+    <header class="site-header site-shell">
+      <a class="brand" href="../">Birthday Engineering Cards</a>
+      <a class="back-link" href="../">← Все открытки</a>
+    </header>
+
+    <main class="site-shell">
+      <section class="birthday-hero" aria-labelledby="birthday-title">
+        <p class="hero-date">11 · 06 · 2026</p>
+        <div>
+          <p class="hero-kicker">observability.status == "excellent"</p>
+          <h1 class="birthday-title" id="birthday-title">Opsmon,<br>с днем рождения!</h1>
+          <p class="birthday-subtitle">Engineering · Monitoring · Reliable systems</p>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel" aria-labelledby="greeting-heading">
+          <p class="panel-label" id="greeting-heading">01 / Поздравление</p>
+          <div class="greeting-text" id="opsmon-greeting">
+            <p>Opsmon, поздравляем с днем рождения!</p>
+            <p>
+              Желаем прозрачных метрик, понятных дашбордов и алертов, которые
+              приходят только тогда, когда действительно нужны.
+            </p>
+            <p>
+              Пусть системы остаются устойчивыми, продакшен — спокойным,
+              сложные задачи складываются в красивые решения, а времени хватает
+              и на новые идеи, и на жизнь за пределами терминала.
+            </p>
+          </div>
+          <div class="button-row">
+            <button class="button" type="button" data-copy-target="#opsmon-greeting">
+              Скопировать поздравление
+            </button>
+          </div>
+        </section>
+
+        <aside class="panel" aria-label="Инженерный статус">
+          <p class="panel-label">02 / System status</p>
+          <div class="terminal">
+            <pre><span class="key">birthday</span>: <span class="value">ready</span>
+<span class="key">uptime</span>: <span class="value">legendary</span>
+<span class="key">alerts</span>: <span class="value">quiet</span>
+<span class="key">dashboards</span>: <span class="value">green</span>
+<span class="key">coffee</span>: <span class="value">available</span>
+<span class="key">weekend</span>: <span class="value">protected</span>
+
+<span class="value">✓ all birthday checks passed</span></pre>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div class="copy-toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
